@@ -1,8 +1,10 @@
-## Welcome to GitHub Pages
+## Welcome to Adaptateur's Data Story
 
-You can use the [editor on GitHub](https://github.com/Floumzi/ADataStory/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+This work explore the general graph properties of three websites, [Epinions](www.epinions.com), [Slashdot](https://slashdot.org/) and [wikipedia](https://en.wikipedia.org/wiki/Main_Page)
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+We propose to study the popularity of the users in social media and their like/dislike behavior. For this purpose, we set to main axes, first we focus on the received votes, then we look at the voters behavior.
+
+The github repo of our project is available [here](https://github.com/epfl-ada/ada-2020-project-milestone-p3-p3_adaptateur).
 
 ### Markdown
 
