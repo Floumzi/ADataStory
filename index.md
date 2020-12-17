@@ -11,15 +11,16 @@ The github repo of our project is available [here](https://github.com/epfl-ada/a
 ## Popularity & fame : How a user is considered by other users ?
 
 Let's start with some definitions ! \\
-`Fame`: the number of inner edges a user get positive and negative links. \\
-`Popularity`: the ratio of positive inner links a user received over the total inner edges.
+**Fame**: the number of inner edges a user get positive and negative links. \\
+**Popularity**: the ratio of positive inner links a user received over the total inner edges.
 
+----------
 
 ### Distribution
 
 Now that we have this definitions, we can ask ourselves how fame and popularity are distributed over the three aforementioned websites.
 
-[//]: # (Insert graphix)
+![Image](src)
 
 Note that Wikipedia not having the same voting process than the two other website is here visible in the distributions.  For Slashdot and Epinions, we observe a power law distribution while for Wikipedia the distribution seems to follow a linear trend. 
 
@@ -32,7 +33,7 @@ Indeed, Shashdot and Epinions work as classical social media, where people who w
 ### Are popularity and fame linked ?
 Or could one be super famous but hated ? Like a despotic tyrant ?
 
-[//]: # (insert graphix)
+![Image](src)
 
 As before, we denote a difference between Wikipedia, where most famous users are not necessarly the one with the highest popularity, and the two other websites where . Hence there is no despotic tyrant... or at least they are not using one of these websites !
 
@@ -42,7 +43,7 @@ As before, we denote a difference between Wikipedia, where most famous users are
 How did the overall popularity within a website evolved ? \\
 Unfortunately, Slashdot dataset did not record the time of the votes so we based our time analysis only on Wikipedia and Epinions.
 
-[//]: # (insert graphix)
+![Image](src)
 
 
 Je sais pas quoi dire je suis pas sûre de ce graph -> average plutot ?
@@ -58,9 +59,16 @@ Je sais pas quoi dire je suis pas sûre de ce graph -> average plutot ?
 ## Haters & lovers : How users interact with each others ?
 
 Once again, some useful definitions : \\
-`activity`: the total review a user performed
-`hater/lover`: the proportion ratio of positive outer links a user send over the total outer edges
+**activity**: the total number of reviews a user performed.
+**hater/lover**: the ratio of positive outer links a user send over the total outer edges. A ratio close to 1 means the user is more of a "hater" and a ratio close to 0 indicates a "lover".
+
+------------
+
+### Distribution
+
+First, let's take a look at the distribution for the activity and the hater/lover ratio on our favorite websites.
+
+![Image](src)
 
 
-### Markdown
-[Link](url) and ![Image](src)
+
