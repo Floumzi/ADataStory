@@ -9,8 +9,8 @@ The github repo of our project is available [here](https://github.com/epfl-ada/a
 
 ## Popularity & fame : How a user is considered by other users ?
 
-Let's start with some definitions !
-`Fame`: the number of inner edges a user get positive and negative links.
+Let's start with some definitions ! \\
+`Fame`: the number of inner edges a user get positive and negative links. \\
 `Popularity`: the proportion ratio of positive inner links a user received over the total inner edges 
 
 Now that we have this definitions, we can ask ourselves how fame and popularity are distributed over the three aforementioned websites.
