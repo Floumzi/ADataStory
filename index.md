@@ -40,7 +40,7 @@ As before, we denote a difference between Wikipedia, where most famous users are
 -----------------
 
 ### Evolution over time
-How did the overall popularity within a website evolved ? \\
+How did the overall popularity within a website evolved ? \
 Unfortunately, Slashdot dataset did not record the time of the votes so we based our time analysis only on Wikipedia and Epinions.
 
 ![Image](src)
@@ -58,8 +58,8 @@ Je sais pas quoi dire je suis pas sûre de ce graph -> average plutot ?
 
 ## Haters & lovers : How users interact with each others ?
 
-Once again, some useful definitions : \\
-**activity**: the total number of reviews a user performed.
+Once again, some useful definitions : \
+**activity**: the total number of reviews a user performed. \
 **hater/lover**: the ratio of positive outer links a user send over the total outer edges. A ratio close to 1 means the user is more of a "hater" and a ratio close to 0 indicates a "lover".
 
 ------------
@@ -70,5 +70,16 @@ First, let's take a look at the distribution for the activity and the hater/love
 
 ![Image](src)
 
+TD : explications
 
+------------
 
+## It's time for some Machine Learning !
+
+TODO
+
+-------
+
+## Conclusion
+
+TODO
