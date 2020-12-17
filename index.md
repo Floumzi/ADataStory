@@ -6,6 +6,35 @@ We propose to study the popularity of the users in social media and their like/d
 
 The github repo of our project is available [here](https://github.com/epfl-ada/ada-2020-project-milestone-p3-p3_adaptateur).
 
+
+## Popularity & fame : How a user is considered by other users ?
+
+Let's start with some definitions !
+`Fame`: the number of inner edges a user get positive and negative links.
+`Popularity`: the proportion ratio of positive inner links a user received over the total inner edges 
+
+Now that we have this definitions, we can ask ourselves how fame and popularity are distributed over the three aforementioned websites.
+
+[//]: # (Insert graphix)
+
+Note that Wikipedia not having the same voting process than the two other website is here visible in the distributions.  For Slashdot and Epinions, we observe a power law distribution while for Wikipedia the distribution seems to follow a linear trend. 
+
+Indeed, Shashdot and Epinions work as classical social media, where people who would like to be famous follow and vote for famous people. This phenomenon correspond to the social media theorie in data science. However Wikipedia voting system is intern to administrator network. The network is structured differently because administrators vote in a more rationnal way.
+
+[//]: # (Expliquer comment fonctionne le principe de vote sur les sites -> Epinions/Slashdot vs Wikipedia -> Intro ?)
+
+[//]: # (Regarder comment faire des séparation entre les "zones")
+-----------------
+
+Are popularity and fame linked ? Or could one be super famous but hated ? Like a despotic tyrant ?
+
+[//]: # (insert graphix)
+
+
+
+
+
+
 ### Markdown
 
 Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
