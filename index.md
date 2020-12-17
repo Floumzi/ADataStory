@@ -6,6 +6,7 @@ We propose to study the popularity of the users in social media and their like/d
 
 The github repo of our project is available [here](https://github.com/epfl-ada/ada-2020-project-milestone-p3-p3_adaptateur).
 
+-----------------
 
 ## Popularity & fame : How a user is considered by other users ?
 
@@ -26,9 +27,6 @@ Indeed, Shashdot and Epinions work as classical social media, where people who w
 
 [//]: # (Expliquer comment fonctionne le principe de vote sur les sites -> Epinions/Slashdot vs Wikipedia -> Intro ?)
 
-[//]: # (Regarder comment faire des séparation entre les "zones")
-
-
 -----------------
 
 ### Are popularity and fame linked ?
@@ -38,42 +36,31 @@ Or could one be super famous but hated ? Like a despotic tyrant ?
 
 As before, we denote a difference between Wikipedia, where most famous users are not necessarly the one with the highest popularity, and the two other websites where . Hence there is no despotic tyrant... or at least they are not using one of these websites !
 
+-----------------
 
 ### Evolution over time
+How did the overall popularity within a website evolved ? \\
 Unfortunately, Slashdot dataset did not record the time of the votes so we based our time analysis only on Wikipedia and Epinions.
 
+[//]: # (insert graphix)
 
 
+Je sais pas quoi dire je suis pas sûre de ce graph -> average plutot ?
+
+
+---------------
+
+### Evolution of the most famous / popular ursers.
+
+
+---------------
+
+## Haters & lovers : How users interact with each others ?
+
+Once again, some useful definitions : \\
+`activity`: the total review a user performed
+`hater/lover`: the proportion ratio of positive outer links a user send over the total outer edges
 
 
 ### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
 [Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/Floumzi/ADataStory/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
