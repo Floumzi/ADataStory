@@ -1,4 +1,4 @@
-# Popularity, haters, and lovers within Signed Network in Social Media
+# ADataStory
 ### Data Story for Ada course
 
 by Matthieu Baud, Paul Renauld and Florine Réau
