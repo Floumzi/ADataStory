@@ -1,6 +1,6 @@
 ## Welcome to Adaptateur's Data Story
 
-This work explore the general graph properties of three websites, [Epinions](https://shopping.com/), [Slashdot](https://slashdot.org/) and [Wikipedia](https://en.wikipedia.org/wiki/Main_Page)
+This work explore the general graph properties of three websites, [Epinions](https://shopping.com/), [Slashdot](https://slashdot.org/) and [Wikipedia](https://en.wikipedia.org/wiki/Main_Page).
 
 We propose to study the popularity of the users in social media and their like/dislike behavior. For this purpose, we set to main axes, first we focus on the received votes, then we look at the voters behavior.
 
@@ -11,7 +11,7 @@ The github repo of our project is available [here](https://github.com/epfl-ada/a
 
 Let's start with some definitions ! \\
 `Fame`: the number of inner edges a user get positive and negative links. \\
-`Popularity`: the proportion ratio of positive inner links a user received over the total inner edges 
+`Popularity`: the ratio of positive inner links a user received over the total inner edges.
 
 
 ### Distribution
@@ -27,6 +27,8 @@ Indeed, Shashdot and Epinions work as classical social media, where people who w
 [//]: # (Expliquer comment fonctionne le principe de vote sur les sites -> Epinions/Slashdot vs Wikipedia -> Intro ?)
 
 [//]: # (Regarder comment faire des séparation entre les "zones")
+
+
 -----------------
 
 ### Are popularity and fame linked ?
