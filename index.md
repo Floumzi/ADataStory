@@ -3,12 +3,12 @@
 This work explore the general graph properties of three websites, [Epinions](https://shopping.com/), [Slashdot](https://slashdot.org/) and [Wikipedia](https://en.wikipedia.org/wiki/Main_Page).
 
 More specifically, for both of theses social networks, links are explicitly positive or negative :
-* The trust network of the Epinions product review Web site,where users can indicate their trust or distrust of the reviewsof others.
-* The social network of the blog Slashdot, wherea signed link indicates that one user likes or dislikes the com-ments of another
-* The voting network of Wikipedia,where a signed link indicates a positive or negative vote byone user on the promotion to admin status of another.
+* The trust network of the Epinions product review Web site, where users can indicate their trust or distrust of the reviews of others
+* The social network of the blog Slashdot, where a signed link indicates that one user likes or dislikes the comments of another
+* The voting network of Wikipedia, where a signed link indicates a positive or negative vote by one user on the promotion to admin status of another
 
 
-We propose to study the popularity of the users in social media and their like/dislike behavior. For this purpose, we set to main axes, first we focus on the received votes, then we look at the voters behavior.
+We propose to study the popularity of the users in social media and their like/dislike behaviour. For this purpose, we set to main axes, first we focus on the received votes, then we look at the voters behavior.
 
 The github repo of our project is available [here](https://github.com/epfl-ada/ada-2020-project-milestone-p3-p3_adaptateur).
 
