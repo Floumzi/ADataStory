@@ -96,7 +96,9 @@ Since there is no differences, we can assume that the behavior does not depend o
 
 ## Puting it all together.
 
-![Image](src)
+![Activiy and fame density for Wikipedia](activity_fame_Wikipedia.png)
+![Activiy and fame density for Slashdot](activity_fame_Slashdot.png)
+![Activiy and fame density for Epinions](activity_fame_Epinions.png)
 
 For our three websites, we observe that most users have a low fame and low activity, then we either have users with high fame and low activity or the other way around.
 Finaly, for Epinions, we observe a clear linearity between fame and activity.
