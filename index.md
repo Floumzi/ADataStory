@@ -22,7 +22,7 @@ Let's start with some definitions ! \
 
 Now that we have this definitions, we can ask ourselves how fame and popularity are distributed over the three aforementioned websites.
 
-![Image](src)
+![Image](fame_pop_Epinions.png)
 
 Note that Wikipedia not having the same voting process than the two other website is here visible in the distributions.  For Slashdot and Epinions, we observe a power law distribution while for Wikipedia the distribution seems to follow a linear trend. 
 
