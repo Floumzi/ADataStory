@@ -179,6 +179,9 @@ Now we are interested in analysing the features importance of our model in a sta
 ![Analysis of the importance of each featuer for Wikipedia](analysis_wikipedia.png)
 ![Analysis of the importance of each featuer for Epinions](analysis_epinions.png)
 
+The two plot above represents the standard error for each features we integrated into the General model. In Wikipedia framework the sign of the work is strongly determined by the Activity and the Fame of the receiver. This result confirms our hypothesis about the voter behaviour. Their votes are more determined by user characteristics, proposed for election and not about an intrinsic emotional behaviour. 
+On the other side Epinions votes prediction is also determined by the activity and the fame of the voter. Once again inside a social media such as Epinions, the profile of the voter takes an important role in the voting decision.
+
 -------
 
 ## Conclusion
