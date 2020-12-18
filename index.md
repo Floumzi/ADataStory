@@ -115,7 +115,7 @@ Now we are interested by analysing the features importance of our model in a sta
 
 ## Conclusion
 
-Through this project, we first observe that **popularity and fame are linked** on our three websites, espetially on Slashdot and Epinions, for which we can apply the classic media theory. However we noticed a difference for Wikipedia, due to the principle of the site and its functions. 
+Through this project, we first observe that **popularity and fame are linked** on our three websites, especially on Slashdot and Epinions, for which we can apply the classic media theory. However we noticed a difference for Wikipedia, due to the principle of the site and its functions. 
 We also noticed that **users behaviors** are likely the same across the different platforms and do not depend on the website. 
 Matching these two informations, we observe **part 3**.
-Finally, **ML**.
+Finally, we apply some **Machine Learning** to try and predict the next vote depending on several features, and we managed to obtain a pretty good accuracy, especially for Epinions website. 
