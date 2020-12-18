@@ -114,9 +114,9 @@ Our new features are very interesting taking apart but combine together ones con
 For instance we can think about extreme classification of users: 
 
 |   Ratio | Low Fame | High Fame |
-| :------------- | :----------: | -----------: | 
-| Low activity |   Shadow user  |   Passive user    |
-| High Activity|     Actif user|  Whale user   |
+| :------------- | :----------: | :-----------: | 
+| **Low activity** |   Shadow user  |   Passive user    |
+| **High Activity** |     Actif user|  Whale user   |
 
 
 <!-- ![Activiy and fame density for Wikipedia](activity_fame_Wikipedia.png) -->
@@ -140,7 +140,7 @@ Several models were tested depending on which point of views we are interested i
 Model 1: Fame/Popularity point of view
 
 | Dataset      | Accuracy | Important Features    | CI (95%) |
-| :------------- | :----------: | -----------: |  -----------: |
+| :------------- | :----------: | :-----------: |  :-----------: |
 | Wikipedia | 78,9% |    Popularity of receiver | [0.785, 0.793] |
 | Epinions | 87,9% | Popularity of receiver | [0.878, 0.88] |
 
@@ -148,14 +148,14 @@ Model 1: Fame/Popularity point of view
 Model 2: Activity/Hater-score point of view
 
 | Dataset      | Accuracy | Important Features    | CI (95%) |
-| :------------- | :----------: | -----------: | -----------: |
+| :------------- | :----------: | :-----------: | :-----------: |
 | Wikipedia |  80,3% |   Hate-score of voter, Activity of receiver | [0.8, 0.807] |
 | Epinions | 88,3% | Hate-score of voter | [0.882, 0.884] |
 
 Model 3: General point of view
 
 | Dataset      | Accuracy | Important Features    | CI (95%) |
-| :------------- | :----------: | -----------: | -----------: |
+| :------------- | :----------: | :-----------: | :-----------: |
 | Wikipedia |  80,7% |  Hate-score of voter, Activity of receiver | [0.804, 0.81] |
 | Epinions | 88,9% | Popularity of receiver, Hate-score of voter | [0.889, 0.891] |
 
