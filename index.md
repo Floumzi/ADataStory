@@ -69,7 +69,8 @@ TODO
 
 Here we focus our attention only on the 50 most famous subjects and observe the evolution of their popularity along with the evolution of their fame. Unfortunately, we cannot really comme to the conclusion of a pattern, except that most users do not have a constent popularity.
 
-![Image](src)
+![Top 50 evolution for Epinions](top_k_Epinions.png)
+![Top 50 evolution for Wikipedia](top_k_Wikipedia.png)
 
 ---------------
 
