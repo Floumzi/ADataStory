@@ -84,6 +84,8 @@ Since there is no differences, we can assume that the behavior does not depend o
 
 ![Image](src)
 
+For our three websites, we observe that most users have a low fame and low activity, then we either have users with high fame and low activity or the other way around.
+Finaly, for Epinions, we observe a clear linearity between fame and activity.
 
 ------------
 
