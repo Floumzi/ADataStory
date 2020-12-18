@@ -108,25 +108,26 @@ Several models were tested depending on which point of views we are interested i
 
 Model 1: Fame/Popularity point of view
 
-| Dataset      | Accuracy | Important Features    |
-| :------------- | :----------: | -----------: |
-| Wikipedia | 78,8% |    Popularity of receiver |
-| Epinions | 87,8% | Popularity of receiver |
+| Dataset      | Accuracy | Important Features    | CI (95%) |
+| :------------- | :----------: | -----------: |  -----------: |
+| Wikipedia | 78,9% |    Popularity of receiver | [0.785, 0.793] |
+| Epinions | 87,9% | Popularity of receiver |  | [0.878, 0.88] |
 
 
 Model 2: Activity/Hater-score point of view
 
-| Dataset      | Accuracy | Important Features    |
-| :------------- | :----------: | -----------: |
-| Wikipedia |  80,3% |   Hate-score of voter, Activity of receiver |
-| Epinions | 88,3% | Hate-score of voter |
+| Dataset      | Accuracy | Important Features    | CI (95%) |
+| :------------- | :----------: | -----------: | -----------: |
+| Wikipedia |  80,3% |   Hate-score of voter, Activity of receiver | [0.8, 0.807] |
+| Epinions | 88,3% | Hate-score of voter | [0.882, 0.884] |
 
 Model 3: General point of view
 
-| Dataset      | Accuracy | Important Features    |
-| :------------- | :----------: | -----------: |
-| Wikipedia |  80,6%, |  Hate-score of voter, Activity of receiver |
-| Epinions | 89% | Popularity of receiver, Hate-score of voter |
+| Dataset      | Accuracy | Important Features    | CI (95%) |
+| :------------- | :----------: | -----------: | -----------: |
+| Wikipedia |  80,7%, |  Hate-score of voter, Activity of receiver | [0.804, 0.81] |
+| Epinions | 88,9% | Popularity of receiver, Hate-score of voter | [0.889, 0.891] |
+
 
 As a first result this model perform better than the others, votes' results seem to be a combination of the voter behaviors and the receiver characteristics. Our regression performs better on the Epinions dataset. Indeed the two votes systems for each website is different. Wikipedia votings system is more professional and is less impacted by emotional behaviors while in a classical social media such as Epinions voters are not subject to vote rationally. Our features gives us more informations for such votes system.
 
