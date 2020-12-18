@@ -18,7 +18,7 @@ The github repo of our project is available [here](https://github.com/epfl-ada/a
 
 Let's start with some definitions ! \
 **Fame**: the number of inner edges a user get positive and negative links. \
-**Popularity**: the ratio of positive inner links a user received over the total inner edges.
+**Popularity**: the ratio of positive inner links a user received over the total inner edges. A popularity ratio should be think as follows: close to 0 means low popularity while one close to 1 means high popularity
 
 ----------
 
