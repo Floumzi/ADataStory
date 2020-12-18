@@ -2,7 +2,7 @@
 
 This work explore the general graph properties of three websites, [Epinions](https://shopping.com/), [Slashdot](https://slashdot.org/) and [Wikipedia](https://en.wikipedia.org/wiki/Main_Page).
 
-More specifically, for both of theses social networks, links are explicitly positive or negative :
+More specifically, for both of theses social networks, links are explicitly positive or negative:
 * The trust network of the Epinions product review Web site, where users can indicate their trust or distrust of the reviews of others
 * The social network of the blog Slashdot, where a signed link indicates that one user likes or dislikes the comments of another
 * The voting network of Wikipedia, where a signed link indicates a positive or negative vote by one user on the promotion to admin status of another
@@ -14,7 +14,7 @@ The github repo of our project is available [here](https://github.com/epfl-ada/a
 
 -----------------
 
-## Popularity & fame : How a user is considered by other users?
+## Popularity & fame: How a user is considered by other users?
 
 Let's start with some definitions! 
 
@@ -87,9 +87,9 @@ For Wikipedia, note that we have mostly lines, which could seem strange. This is
 
 ---------------
 
-## Haters & lovers : How users interact with each others?
+## Haters & lovers: How users interact with each others?
 
-Once again, some useful definitions : 
+Once again, some useful definitions: 
 
 * **activity**: the total number of reviews a user performed. 
 * **hater/lover**: the ratio of positive outer links a user send over the total outer edges.Similarly to popularity a ratio close to 1 means the user is more of a "hater" and a ratio close to 0 indicates a "lover". 
@@ -129,9 +129,9 @@ For instance we can think about extreme case user classification:
 <!-- ![Activiy and fame density for Wikipedia](activity_fame_Wikipedia.png) -->
 <!-- ![Activiy and fame density for Slashdot](activity_fame_Slashdot.png) -->
 <!-- ![Activiy and fame density for Epinions](activity_fame_Epinions.png) -->
-<img src="activity_fame_Wikipedia.png" alt="Activiy and fame density for Wikipedia" width="500"/>
+<center><img src="activity_fame_Wikipedia.png" alt="Activiy and fame density for Wikipedia" width="500"/>
 <img src="activity_fame_Slashdot.png" alt="Activiy and fame density for Slashdot" width="500"/>
-<img src="activity_fame_Epinions.png" alt="Activiy and fame density for Epinions" width="500"/>
+<img src="activity_fame_Epinions.png" alt="Activiy and fame density for Epinions" width="500"/></center>
 
 
 For our three websites, we observe that most users have a low fame and low activity, then we either have users with high fame and low activity or the other way around.
