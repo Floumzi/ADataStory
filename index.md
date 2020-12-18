@@ -112,6 +112,7 @@ Our new features are very interesting taking apart but combine together ones con
 
 
 For instance we can think about extreme classification of users: 
+
 |   Ratio | Low Fame | High Fame |
 | Low activity |   Shadow user  |   Passive user    |
 | High Activity|     Actif user|  Whale user   |
