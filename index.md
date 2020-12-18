@@ -111,7 +111,7 @@ Model 1: Fame/Popularity point of view
 | Dataset      | Accuracy | Important Features    | CI (95%) |
 | :------------- | :----------: | -----------: |  -----------: |
 | Wikipedia | 78,9% |    Popularity of receiver | [0.785, 0.793] |
-| Epinions | 87,9% | Popularity of receiver |  | [0.878, 0.88] |
+| Epinions | 87,9% | Popularity of receiver | [0.878, 0.88] |
 
 
 Model 2: Activity/Hater-score point of view
