@@ -68,10 +68,13 @@ TODO
 
 ### Evolution of the most famous / popular ursers.
 
-Here we focus our attention only on the 50 most famous subjects and observe the evolution of their popularity along with the evolution of their fame. Unfortunately, we cannot really comme to the conclusion of a pattern, except that most users do not have a constent popularity over time.
+Here we focus our attention only on the 50 most famous subjects and observe the evolution of their popularity along with the evolution of their fame. Unfortunately, we cannot really comme to the conclusion of a pattern, except that most users do not have a constent popularity over time. For Epinions, many of them seem to loose popularity as they become more famous, but this is not a generality.
+
 
 ![Top 50 evolution for Epinions](top_k_Epinions.png)
 ![Top 50 evolution for Wikipedia](top_k_Wikipedia.png)
+
+For Wikipedia, note that we have mostly lines, which could seem strange. This is due to Wikipedia's voting system, it works with election day and therefore this graph does not really give meaningfull informations.
 
 ---------------
 
