@@ -128,7 +128,7 @@ Epinions is once again very stable, and its shape stays the same.
 
 ## Puting it all together.
 
-Our new features are very interesting taking apart but combine together ones con think about how analyse the profile of the different users. Some can produce equilibrate proportion of activity against fame and some other could react complete differently. For this purpose we decided to plot the density of fame against activity. Along the different datasets which profile is possible to identify and could we retrieve some logic behind them?
+Our new features are very interesting taking apart but combining them together can give us an even better understanding of the users. Some can produce equilibrate proportion of activity against fame and some other could react complete differently. For this purpose we decided to plot the density of fame against activity. Along the different datasets, which profile is it possible to identify and could we retrieve some logic behind them?
 
 
 For instance we can think about extreme case user classification: 
@@ -146,18 +146,21 @@ For instance we can think about extreme case user classification:
 <img src="activity_fame_Slashdot.png" alt="Activiy and fame density for Slashdot" width="500"/>
 <img src="activity_fame_Epinions.png" alt="Activiy and fame density for Epinions" width="500"/></center>
 
-For our three websites, we observe that most users have a low fame and low activity. Independently of the dataset there are horizontal and vertical lines which correspond to Passive and Active users as mentioned in our classification. Passive users are people such as spectateurs that receive a lots of votes but are not involved in the voting systems. Actif users in the counter part vote a lot without reciprocity. We have the confirmation here of our first result on the high proportion of shadow users which gravitate around the network. Besides the main part of lambda users is represented by the cloud present in each dataset. Whale users are quite rare and follow this general trend implied by the cloud.
+For our three websites, we observe that most users have a low fame and low activity. Independently of the dataset there are horizontal and vertical lines which correspond to Passive and Active users as mentioned in our classification. Passive users are people such as spectators that receive a lot of votes but are not involved in the voting systems. Actif users, on the other side, vote a lot without reciprocity. We have the confirmation here of our first result on the high proportion of shadow users which gravitate around the network. Besides the main part of lambda users is represented by the cloud present in each dataset. Whale users are quite rare and follow this general trend implied by the cloud.
 
 * Wikipedia: we clearly notice an upward shift for fame which indicates user voters are most voted than they vote
-* Slashdot: hard to get more specific information
-* Epinions: clearly observe a linearity between fame and activity
+* Slashdot: we see a very disperse cloud, which seem to indicate that any kind of users cohexist.
+* Epinions: clearly observe a linearity between fame and activity.
 
 ------------
 
 ## It's time for some Machine Learning!
 
-We are now ready to proceed and apply what we have learnt previously. Our new framework has created new features that can be used to predict the next vote. 
-Several models were tested depending on which point of views we are interested in. Are popularity and fame sufficient for prediction? Are activity and hate score sufficient for prediction?  Or maybe a combination of all features could fit well our task. To perform the classification we choose two different models: Gradient Boosting classifier compare to a Logistic regression. As usual the GBC performs better than the Logistic Regression. Therefore we decided to show you the GBC results only using Bootstrap  a 95% Confidence interval and we empirically retrieve important features:
+We are now ready to proceed and apply what we have learnt previously. Our new framework has created new features that we could try to use to predict the next vote.
+We will introduce machine learning for that. Mostly because it's fun, but it seems to be a trend these last years, and we are very fashionable people, so here goes.
+
+
+Several models were tested depending on which point of views we are interested in. Are popularity and fame sufficient for prediction? Are activity and hate score sufficient for prediction?  Or maybe a combination of all features could fit well our task. To perform the classification we choose two different models: Gradient Boosting classifier compared to a Logistic regression. As usual, the GBC performs better than the Logistic Regression. Therefore we decided to show you the GBC results only using Bootstrap at 95% Confidence interval and we empirically retrieve important features:
 
 Model 1: Fame/Popularity point of view
 
@@ -182,24 +185,26 @@ Model 3: General point of view
 | Epinions | 88,9% | Popularity of receiver, Hate-score of voter | [0.889, 0.891] |
 
 
-As a first result this model perform better than the others, votes' results seem to be a combination of the voter behaviors and the receiver characteristics. Our regression performs better on the Epinions dataset. Indeed the two votes systems for each website is different. Wikipedia votings system is more professional and is less impacted by emotional behaviors while in a classical social media such as Epinions voters are not subject to vote rationally. Our features gives us more informations for such votes system.
+As a first result, this model perform better than the others. Votes' results seem to be a combination of the voter behaviors and the receiver characteristics. Our regression performs better on the Epinions dataset. Indeed, the two votes systems for each website is different. Wikipedia's voting system is more professional and is less impacted by emotional behaviors while in a classical social media such as Epinions voters are not subject to vote rationally. Our features gives us more informations for such votes system.
 
-Now we are interested in analysing the features importance of our model in a statically way over logistic regression. To avoid repeating ourselves, we choose a different approach for our analysis: we focus only on the nodes point of views. 
+Now we are interested in analysing the features importance of our model in a statical way over logistic regression. To avoid repeating ourselves, we choose a different approach for our analysis: we focus only on the nodes point of views. 
 
-* Maybe only the combination of sender vote features could allow to predict the next vote? This suppose that the voter does not take into account the receiver’s characteristics and his behavior is only determine by his voter mentality. 
-* Maybe only the combination of receiver vote features could allow to predict the next vote? This suppose the voter takes only into account receiver’s characteristic and his behavior is independent of his past votes. At the end we decide to create a general model that combine all features. 
+* Maybe only the combination of sender vote features could allow to predict the next vote? This implies that the voter does not take into account the receiver’s characteristics and its behavior is only determine by its voter mentality. 
+* Maybe only the combination of receiver vote features could allow to predict the next vote? This implies that the voter takes only into account receiver’s characteristics and their behavior is independent of their past votes. At the end, we decided to create a general model that combine all features. 
 
 ![Analysis of the importance of each featuer for Wikipedia](analysis_wikipedia.png)
 ![Analysis of the importance of each featuer for Epinions](analysis_epinions.png)
 
-The two plot above represents the standard error for each features we integrated into the General model. In Wikipedia framework the sign of the work is strongly determined by the Activity and the Fame of the receiver. This result confirms our hypothesis about the voter behaviour. Their votes are more determined by user characteristics, proposed for election and not about an intrinsic emotional behaviour. 
-On the other side Epinions votes prediction is also determined by the activity and the fame of the voter. Once again inside a social media such as Epinions, the profile of the voter takes an important role in the voting decision.
+The two plot above represents the standard error for each features we integrated into the General model. In Wikipedia framework the sign of the link is strongly determined by the Activity and the Fame of the receiver. This result confirms our hypothesis about the voter behaviour. Their votes are more determined by user characteristics, proposed for election and not about an intrinsic emotional behaviour. A user who is higly active is more likely to get positive votes. Interestingly, a "famous" user will gete negative votes. This could be because morer "famous" means more votes, which means more elections for them, which could mean that elections weeere tried but failed, and they retried again later.
+
+
+On the other side, Epinions votes prediction is also determined by the activity and the fame of the voter. Once again inside a social media such as Epinions, the profile of the voter takes an important role in the voting decision. This time, the activity of both the source and the destination plays an immportant negative role. This means that active users are more demanding, and also all users are more demanding towards active users.
 
 -------
 
 ## Conclusion
 
-Through this project, we first observe that **popularity and fame are linked** on our three websites, especially on Slashdot and Epinions, for which we can apply the classic media theory. However we noticed a difference for Wikipedia, due to the principle of the site and its functions. 
+Through this project, we first observed that **popularity and fame are linked** on our three websites, especially on Slashdot and Epinions, for which we can apply the classic media theory. However, we noticed a difference for Wikipedia, due to the principle of the site and its functions. 
 We also noticed that **users behaviors** are likely the same across the different platforms and do not depend on the website. 
 Matching these two informations, we were able to link fame and activity and observe some matching between these features.
-Finally, we apply some **Machine Learning** to try and predict the next vote depending on several features, and we managed to obtain a pretty good accuracy, especially for Epinions website. 
+Finally, we apply some **Machine Learning** to try and predict the next vote depending on several features, and we managed to obtain a pretty good accuracy, especially for Epinions website. Votes could predicted using mostly the fame and activity of the sources and destinations.
