@@ -86,11 +86,16 @@ Once again, some useful definitions : \
 
 First, let's take a look at the distribution for the activity and the hater/lover ratio on our favorite websites.
 
-![Image](src)
+![Distribution of activity and hate ratio for Epinions](hate_activity_Epinions.png)
+![Distribution of activity and hate ratio for Slashdot](hate_activity_Slashdot.png)
+![Distribution of activity and hate ratio for Wikipedia](hate_activity_Wikipedia.png)
 
 Here, we observe that the three websites seems to follow more or less a power law distribution for users activities. 
 Since there is no differences, we can assume that the behavior does not depend on the website's purpose.
 
+
+![Distribution of activity and hate ratio for wikipedia over time](animation_Wikipedia_activiy_hate.gif)
+![Distribution of activity and hate ratio for Epinions over time](animation_Epinions_activiy_hate.gif)
 ------------
 
 ## Puting it all together.
