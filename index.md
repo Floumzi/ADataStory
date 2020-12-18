@@ -43,15 +43,6 @@ The high number of users with popularity 0 and 1 and the high number of users wi
 
 -----------------
 
-### Are popularity and fame linked?
-Or could one be super famous but hated? Like a despotic tyrant?
-<!-- TODO -->
-![Image](src)
-
-As before, we denote a difference between Wikipedia, where most famous users are not necessarly the one with the highest popularity, and the two other websites where . Hence there is no despotic tyrant... or at least they are not using one of these websites!
-
------------------
-
 ### Evolution over time
 How did the overall popularity within a website evolved? \
 Unfortunately, Slashdot dataset did not record the time of the votes so we based our time analysis only on Wikipedia and Epinions. Let's first focus on the evolution of popularity for these two datasets. More concretely, we will look at the ratio of positive edges on the network over time. We call this ratio "positivity".
