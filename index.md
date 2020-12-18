@@ -88,12 +88,18 @@ Model 1: Fame/Popularity point of view
 
 
 Model 2: Activity/Hater-score point of view
-* Wikipedia: an accuracy of 80,3%, the important features: Hate-score of voter, Activity of receiver
-* Epinions: an accuracy of 88,3%, the important features: Hate-score of voter
+
+| Dataset      | Accuracy | Important Features    |
+| :------------- | :----------: | -----------: |
+| Wikipedia |  80,3% |   Hate-score of voter, Activity of receiver |
+| Epinions | 88,3% | Hate-score of voter |
 
 Model 3: General point of view
-* Wikipedia: an accuracy of 80,6%, the important features: Hate-score of voter, Activity of receiver
-* Epinions: an accuracy of 89%, the important features: Popularity of receiver, Hate-score of voter
+
+| Dataset      | Accuracy | Important Features    |
+| :------------- | :----------: | -----------: |
+| Wikipedia |  80,6%, |  Hate-score of voter, Activity of receiver |
+| Epinions | 89% | Popularity of receiver, Hate-score of voter |
 
 As a first result this model perform better than the others, votes result seems to be a combination of the voter behavior and the receiver characteristics. Our regression performs better on the Epinions dataset. Indeed the two votes systems for each website is different. Wikipedia votings system is more professional and is less impact by emotional behaviors while in a classical social media such as Epinions voters are not subject to vote rationally. Our features gives us more information for such votes system.
 
