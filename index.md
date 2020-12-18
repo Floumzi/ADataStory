@@ -146,9 +146,11 @@ For instance we can think about extreme case user classification:
 <img src="activity_fame_Slashdot.png" alt="Activiy and fame density for Slashdot" width="500"/>
 <img src="activity_fame_Epinions.png" alt="Activiy and fame density for Epinions" width="500"/></center>
 
+For our three websites, we observe that most users have a low fame and low activity. Independently of the dataset there are horizontal and vertical lines which correspond to Passive and Active users as mentioned in our classification. Passive users are people such as spectateurs that receive a lots of votes but are not involved in the voting systems. Actif users in the counter part vote a lot without reciprocity. We have the confirmation here of our first result on the high proportion of shadow users which gravitate around the network. Besides the main part of lambda users is represented by the cloud present in each dataset. Whale users are quite rare and follow this general trend implied by the cloud.
 
-For our three websites, we observe that most users have a low fame and low activity, then we either have users with high fame and low activity or the other way around.
-Finaly, for Epinions, we observe a clear linearity between fame and activity.
+* Wikipedia: we clearly notice an upward shift for fame which indicates user voters are most voted than they vote
+* Slashdot: hard to get more specific information
+* Epinions: clearly observe a linearity between fame and activity
 
 ------------
 
@@ -189,6 +191,9 @@ Now we are interested in analysing the features importance of our model in a sta
 
 ![Analysis of the importance of each featuer for Wikipedia](analysis_wikipedia.png)
 ![Analysis of the importance of each featuer for Epinions](analysis_epinions.png)
+
+The two plot above represents the standard error for each features we integrated into the General model. In Wikipedia framework the sign of the work is strongly determined by the Activity and the Fame of the receiver. This result confirms our hypothesis about the voter behaviour. Their votes are more determined by user characteristics, proposed for election and not about an intrinsic emotional behaviour. 
+On the other side Epinions votes prediction is also determined by the activity and the fame of the voter. Once again inside a social media such as Epinions, the profile of the voter takes an important role in the voting decision.
 
 -------
 
