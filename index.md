@@ -12,8 +12,6 @@ We propose to study the popularity of the users in social media and their like/d
 
 The github repo of our project is available [here](https://github.com/epfl-ada/ada-2020-project-milestone-p3-p3_adaptateur).
 
-**TD** : description data + fonctionnement sites et votes
-
 -----------------
 
 ## Popularity & fame : How a user is considered by other users ?
@@ -55,9 +53,7 @@ Unfortunately, Slashdot dataset did not record the time of the votes so we based
 
 ![Evolution of Positivity over time](positivity_over_time.png)
 
-
-Je sais pas quoi dire je suis pas sûre de ce graph -> average plutot ?
-
+**TODO**: desc
 
 TODO
 ![Fame and popularity evolution over time for Epinions](animation_Epinions_fame_pop.gif)
@@ -140,5 +136,5 @@ Now we are interested in analysing the features importance of our model in a sta
 
 Through this project, we first observe that **popularity and fame are linked** on our three websites, especially on Slashdot and Epinions, for which we can apply the classic media theory. However we noticed a difference for Wikipedia, due to the principle of the site and its functions. 
 We also noticed that **users behaviors** are likely the same across the different platforms and do not depend on the website. 
-Matching these two informations, we observe **part 3**.
+Matching these two informations, we were able to link fame and activity and observe some matching between these features.
 Finally, we apply some **Machine Learning** to try and predict the next vote depending on several features, and we managed to obtain a pretty good accuracy, especially for Epinions website. 
