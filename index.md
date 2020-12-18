@@ -133,9 +133,11 @@ For instance we can think about extreme case user classification:
 <img src="activity_fame_Slashdot.png" alt="Activiy and fame density for Slashdot" width="500"/>
 <img src="activity_fame_Epinions.png" alt="Activiy and fame density for Epinions" width="500"/>
 
+For our three websites, we observe that most users have a low fame and low activity. Independently of the dataset there are horizontal and vertical lines which correspond to Passive and Active user as mentioned in our classification. Passive user are people such as spectateurs that receive a lots of votes but are not involved in the voting systems. Actif user in the counter part votes a lot of votes without reciprocity. We have the confirmation here of our first result on the high proportion of shadow user which gravitate around the network. Besides the main part of lambda users is represented by the cloud present in each dataset. Whale users are quite rare and follow this general trend implied by the cloud.
 
-For our three websites, we observe that most users have a low fame and low activity, then we either have users with high fame and low activity or the other way around.
-Finaly, for Epinions, we observe a clear linearity between fame and activity.
+* Wikipedia: we clearly notice an upward shift for fame which indicates user voters are most voted than they vote
+* Slashdot: hard to get more specific information
+* Epinions: clearly observe a linearity between fame and activity
 
 ------------
 
