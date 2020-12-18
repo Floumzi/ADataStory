@@ -30,9 +30,11 @@ Now that we have this definitions, we can ask ourselves how fame and popularity 
 ![Fame and population distribution for Slashdot](fame_pop_Slashdot.png)
 ![Fame and population distribution for Wikipedia](fame_pop_Wikipedia.png)
 
-Note that Wikipedia not having the same voting process than the two other website is here visible in the distributions.  For Slashdot and Epinions, we observe a power law distribution while for Wikipedia the distribution seems to follow a linear trend. 
+Note that Wikipedia not having the same voting process than the two other website is here visible in the distributions.  For Slashdot and Epinions, we observe a power law distribution while for Wikipedia the distribution seems to follow a linear trend over a logorithm scales.  
 
 Indeed, Shashdot and Epinions work as classical social media, where people who would like to be famous follow and vote for famous people. This phenomenon correspond to the social media theory in data science. However Wikipedia voting system is intern to administrator network. The network is structured differently because administrators vote in a more rationnal way.
+
+The high number of user with popularity 0 and 1 with the high number of users with fame close to 0 correspond likely to people which received low number of votes (low fame) with popularity of 0 of it received a negative link and a popularity of 1 if the it received positive link. 
 
 [//]: # (Expliquer comment fonctionne le principe de vote sur les sites -> Epinions/Slashdot vs Wikipedia -> Intro ?)
 
