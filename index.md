@@ -82,8 +82,8 @@ Since there is no differences, we can assume that the behavior does not depend o
 
 ## It's time for some Machine Learning !
 
-We are now ready to proceed and apply what we learnt previously. Our new framework has created new features that can be used to predict the next vote. 
-Several models was tested depending on which point of views we are interesting. Are popularity and fame sufficient for prediction ? Are activity and hate score sufficient for prediction ?  Or maybe a combination of all features could fit well our task. To perform the classification we choose two different models: Gradient Boosting classifier compare to a Logistic regression. As usual the GBC performs better the Logistic Regression. Therefore we decided to show you the GBC results only using Bootstrap Confidence interval and we empirical retrieve important features:
+We are now ready to proceed and apply what we have learnt previously. Our new framework has created new features that can be used to predict the next vote. 
+Several models were tested depending on which point of views we are interested in. Are popularity and fame sufficient for prediction ? Are activity and hate score sufficient for prediction ?  Or maybe a combination of all features could fit well our task. To perform the classification we choose two different models: Gradient Boosting classifier compare to a Logistic regression. As usual the GBC performs better than the Logistic Regression. Therefore we decided to show you the GBC results only using Bootstrap Confidence interval and we empirically retrieve important features:
 
 Model 1: Fame/Popularity point of view
 
@@ -107,9 +107,9 @@ Model 3: General point of view
 | Wikipedia |  80,6%, |  Hate-score of voter, Activity of receiver |
 | Epinions | 89% | Popularity of receiver, Hate-score of voter |
 
-As a first result this model perform better than the others, votes result seems to be a combination of the voter behavior and the receiver characteristics. Our regression performs better on the Epinions dataset. Indeed the two votes systems for each website is different. Wikipedia votings system is more professional and is less impact by emotional behaviors while in a classical social media such as Epinions voters are not subject to vote rationally. Our features gives us more information for such votes system.
+As a first result this model perform better than the others, votes' results seem to be a combination of the voter behaviors and the receiver characteristics. Our regression performs better on the Epinions dataset. Indeed the two votes systems for each website is different. Wikipedia votings system is more professional and is less impacted by emotional behaviors while in a classical social media such as Epinions voters are not subject to vote rationally. Our features gives us more informations for such votes system.
 
-Now we are interesting by analyse the features importance of our model in a statically way over logistic regression. To avoid repeat ourself we choose a different approach for our analysis: we focus only on the nodes point of views. Maybe the combination of sender vote features only could plenty allow to predict the next vote ? This suppose that the voter does not take into account the receiver’s characteristic and his behavior is only determine by his voter mentality. Maybe the combination of receiver vote features only, could plenty allow to predict the next vote ? This suppose the voter takes only into account receiver’s characteristic and his behavior is independent of his past votes. At the end we decide to create a general model that combine all features. 
+Now we are interested by analysing the features importance of our model in a statically way over logistic regression. To avoid repeating ourselves, we choose a different approach for our analysis: we focus only on the nodes point of views. Maybe the combination of sender vote features only could plenty allow to predict the next vote ? This suppose that the voter does not take into account the receiver’s characteristics and his behavior is only determine by his voter mentality. Maybe the combination of receiver vote features only, could plenty allow to predict the next vote ? This suppose the voter takes only into account receiver’s characteristic and his behavior is independent of his past votes. At the end we decide to create a general model that combine all features. 
 
 -------
 
