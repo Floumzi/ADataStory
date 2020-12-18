@@ -30,9 +30,11 @@ Now that we have this definitions, we can ask ourselves how fame and popularity 
 ![Fame and population distribution for Slashdot](fame_pop_Slashdot.png)
 ![Fame and population distribution for Wikipedia](fame_pop_Wikipedia.png)
 
-Note that Wikipedia not having the same voting process than the two other website is here visible in the distributions.  For Slashdot and Epinions, we observe a power law distribution while for Wikipedia the distribution seems to follow a linear trend. 
+Note that Wikipedia not having the same voting process than the two other website is here visible in the distributions.  For Slashdot and Epinions, we observe a power law distribution while for Wikipedia the distribution seems to follow a linear trend over a logorithm scales.  
 
 Indeed, Shashdot and Epinions work as classical social media, where people who would like to be famous follow and vote for famous people. This phenomenon correspond to the social media theory in data science. However Wikipedia voting system is intern to administrator network. The network is structured differently because administrators vote in a more rationnal way.
+
+The high number of user with popularity 0 and 1 with the high number of users with fame close to 0 correspond likely to people which received low number of votes (low fame) with popularity of 0 of it received a negative link and a popularity of 1 if the it received positive link. 
 
 [//]: # (Expliquer comment fonctionne le principe de vote sur les sites -> Epinions/Slashdot vs Wikipedia -> Intro ?)
 
@@ -49,11 +51,14 @@ As before, we denote a difference between Wikipedia, where most famous users are
 
 ### Evolution over time
 How did the overall popularity within a website evolved ? \
-Unfortunately, Slashdot dataset did not record the time of the votes so we based our time analysis only on Wikipedia and Epinions.
+Unfortunately, Slashdot dataset did not record the time of the votes so we based our time analysis only on Wikipedia and Epinions. Let's first focus on the evolution of popularity for these two datasets.
 
 ![Evolution of Positivity over time](positivity_over_time.png)
 
-**TODO**: desc
+* Wikipedia: note and important irregularity without trends and an average of about 78% popularity
+* Epininons: 
+
+The 
 
 TODO
 ![Fame and popularity evolution over time for Epinions](animation_Epinions_fame_pop.gif)
@@ -112,7 +117,7 @@ Finaly, for Epinions, we observe a clear linearity between fame and activity.
 ## It's time for some Machine Learning !
 
 We are now ready to proceed and apply what we have learnt previously. Our new framework has created new features that can be used to predict the next vote. 
-Several models were tested depending on which point of views we are interested in. Are popularity and fame sufficient for prediction ? Are activity and hate score sufficient for prediction ?  Or maybe a combination of all features could fit well our task. To perform the classification we choose two different models: Gradient Boosting classifier compare to a Logistic regression. As usual the GBC performs better than the Logistic Regression. Therefore we decided to show you the GBC results only using Bootstrap Confidence interval and we empirically retrieve important features:
+Several models were tested depending on which point of views we are interested in. Are popularity and fame sufficient for prediction ? Are activity and hate score sufficient for prediction ?  Or maybe a combination of all features could fit well our task. To perform the classification we choose two different models: Gradient Boosting classifier compare to a Logistic regression. As usual the GBC performs better than the Logistic Regression. Therefore we decided to show you the GBC results only using Bootstrap  a 95% Confidence interval and we empirically retrieve important features:
 
 Model 1: Fame/Popularity point of view
 
@@ -133,13 +138,16 @@ Model 3: General point of view
 
 | Dataset      | Accuracy | Important Features    | CI (95%) |
 | :------------- | :----------: | -----------: | -----------: |
-| Wikipedia |  80,7%, |  Hate-score of voter, Activity of receiver | [0.804, 0.81] |
+| Wikipedia |  80,7% |  Hate-score of voter, Activity of receiver | [0.804, 0.81] |
 | Epinions | 88,9% | Popularity of receiver, Hate-score of voter | [0.889, 0.891] |
 
 
 As a first result this model perform better than the others, votes' results seem to be a combination of the voter behaviors and the receiver characteristics. Our regression performs better on the Epinions dataset. Indeed the two votes systems for each website is different. Wikipedia votings system is more professional and is less impacted by emotional behaviors while in a classical social media such as Epinions voters are not subject to vote rationally. Our features gives us more informations for such votes system.
 
-Now we are interested in analysing the features importance of our model in a statically way over logistic regression. To avoid repeating ourselves, we choose a different approach for our analysis: we focus only on the nodes point of views. Maybe the combination of sender vote features only could plenty allow to predict the next vote ? This suppose that the voter does not take into account the receiver’s characteristics and his behavior is only determine by his voter mentality. Maybe the combination of receiver vote features only, could plenty allow to predict the next vote ? This suppose the voter takes only into account receiver’s characteristic and his behavior is independent of his past votes. At the end we decide to create a general model that combine all features. 
+Now we are interested in analysing the features importance of our model in a statically way over logistic regression. To avoid repeating ourselves, we choose a different approach for our analysis: we focus only on the nodes point of views. 
+
+* Maybe only the combination of sender vote features could allow to predict the next vote ? This suppose that the voter does not take into account the receiver’s characteristics and his behavior is only determine by his voter mentality. 
+* Maybe only the combination of receiver vote features could allow to predict the next vote ? This suppose the voter takes only into account receiver’s characteristic and his behavior is independent of his past votes. At the end we decide to create a general model that combine all features. 
 
 ![Analysis of the importance of each featuer for Wikipedia](analysis_wikipedia.png)
 ![Analysis of the importance of each featuer for Epinions](analysis_epinions.png)
