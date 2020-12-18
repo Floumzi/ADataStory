@@ -80,6 +80,13 @@ Since there is no differences, we can assume that the behavior does not depend o
 
 ------------
 
+## Puting it all together.
+
+![Image](src)
+
+
+------------
+
 ## It's time for some Machine Learning !
 
 We are now ready to proceed and apply what we have learnt previously. Our new framework has created new features that can be used to predict the next vote. 
