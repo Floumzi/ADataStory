@@ -108,6 +108,9 @@ Since there is no differences, we can assume that the behavior does not depend o
 
 ## Puting it all together.
 
+Our new features are very interesting taking apart but combine together ones con think about how analyse the profile of the different users. Some can produce equilibrate proportion of activity against fame and some other could react complete differently. For this purpose we decided to plot the density of fame against activity. Along the different datasets which profile is possible to identify and could we retrieve some logic behind them ?
+
+
 <!-- ![Activiy and fame density for Wikipedia](activity_fame_Wikipedia.png) -->
 <!-- ![Activiy and fame density for Slashdot](activity_fame_Slashdot.png) -->
 <!-- ![Activiy and fame density for Epinions](activity_fame_Epinions.png) -->
