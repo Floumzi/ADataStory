@@ -53,11 +53,15 @@ As before, we denote a difference between Wikipedia, where most famous users are
 How did the overall popularity within a website evolved ? \
 Unfortunately, Slashdot dataset did not record the time of the votes so we based our time analysis only on Wikipedia and Epinions.
 
-![Image](src)
+![Evolution of Positivity over time](positivity_over_time.png)
 
 
 Je sais pas quoi dire je suis pas sûre de ce graph -> average plutot ?
 
+
+TODO
+![Fame and popularity evolution over time for Epinions](animation_Epinions_fame_pop.gif)
+![Fame and popularity evolution over time for Epinions](animation_Epinions_fame_pop.gif)
 
 ---------------
 
