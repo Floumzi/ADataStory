@@ -108,7 +108,7 @@ Finaly, for Epinions, we observe a clear linearity between fame and activity.
 ## It's time for some Machine Learning !
 
 We are now ready to proceed and apply what we have learnt previously. Our new framework has created new features that can be used to predict the next vote. 
-Several models were tested depending on which point of views we are interested in. Are popularity and fame sufficient for prediction ? Are activity and hate score sufficient for prediction ?  Or maybe a combination of all features could fit well our task. To perform the classification we choose two different models: Gradient Boosting classifier compare to a Logistic regression. As usual the GBC performs better than the Logistic Regression. Therefore we decided to show you the GBC results only using Bootstrap Confidence interval and we empirically retrieve important features:
+Several models were tested depending on which point of views we are interested in. Are popularity and fame sufficient for prediction ? Are activity and hate score sufficient for prediction ?  Or maybe a combination of all features could fit well our task. To perform the classification we choose two different models: Gradient Boosting classifier compare to a Logistic regression. As usual the GBC performs better than the Logistic Regression. Therefore we decided to show you the GBC results only using Bootstrap  a 95% Confidence interval and we empirically retrieve important features:
 
 Model 1: Fame/Popularity point of view
 
