@@ -111,11 +111,11 @@ Since there is no differences, we can assume that the behavior does not depend o
 Our new features are very interesting taking apart but combine together ones con think about how analyse the profile of the different users. Some can produce equilibrate proportion of activity against fame and some other could react complete differently. For this purpose we decided to plot the density of fame against activity. Along the different datasets which profile is possible to identify and could we retrieve some logic behind them ?
 
 
-For instance we can think about extreme classification of users: 
+For instance we can think about extreme case user classification: 
 
 |   Ratio | Low Fame | High Fame |
 | :------------- | :----------: | :-----------: | 
-| **Low activity** |   Shadow user  |   Passive user    |
+| **Low Activity** |   Shadow user  |   Passive user    |
 | **High Activity** |     Actif user|  Whale user   |
 
 
