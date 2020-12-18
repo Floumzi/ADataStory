@@ -6,6 +6,8 @@ We propose to study the popularity of the users in social media and their like/d
 
 The github repo of our project is available [here](https://github.com/epfl-ada/ada-2020-project-milestone-p3-p3_adaptateur).
 
+**TD** : description data + fonctionnement sites et votes
+
 -----------------
 
 ## Popularity & fame : How a user is considered by other users ?
@@ -53,6 +55,9 @@ Je sais pas quoi dire je suis pas sûre de ce graph -> average plutot ?
 
 ### Evolution of the most famous / popular ursers.
 
+Here we focus our attention only on the 50 most famous subjects and observe the evolution of their popularity along with the evolution of their fame. Unfortunately, we cannot really comme to the conclusion of a pattern, except that most users do not have a constent popularity.
+
+![Image](src)
 
 ---------------
 
@@ -70,7 +75,8 @@ First, let's take a look at the distribution for the activity and the hater/love
 
 ![Image](src)
 
-TD : explications
+Here, we observe that the three websites seems to follow more or less a power law distribution for users activities. 
+Since there is no differences, we can assume that the behavior does not depend on the website's purpose.
 
 ------------
 
@@ -105,11 +111,11 @@ As a first result this model perform better than the others, votes result seems 
 
 Now we are interesting by analyse the features importance of our model in a statically way over logistic regression. To avoid repeat ourself we choose a different approach for our analysis: we focus only on the nodes point of views. Maybe the combination of sender vote features only could plenty allow to predict the next vote ? This suppose that the voter does not take into account the receiver’s characteristic and his behavior is only determine by his voter mentality. Maybe the combination of receiver vote features only, could plenty allow to predict the next vote ? This suppose the voter takes only into account receiver’s characteristic and his behavior is independent of his past votes. At the end we decide to create a general model that combine all features. 
 
-
-
-
 -------
 
 ## Conclusion
 
-TODO
+Through this project, we first observe that **popularity and fame are linked** on our three websites, espetially on Slashdot and Epinions, for which we can apply the classic media theory. However we noticed a difference for Wikipedia, due to the principle of the site and its functions. 
+We also noticed that **users behaviors** are likely the same across the different platforms and do not depend on the website. 
+Matching these two informations, we observe **part 3**.
+Finally, **ML**.
