@@ -55,10 +55,12 @@ Unfortunately, Slashdot dataset did not record the time of the votes so we based
 
 ![Evolution of Positivity over time](positivity_over_time.png)
 
-* Wikipedia: note and important irregularity without trends and an average of about 78% popularity
-* Epininons: 
+* Wikipedia:  an important irregularity without trends and an average of about 78% popularity
+* Epininions: a linear downwarding evolution of the popularity starting from the 05/2001 staying over 85%
 
-The 
+Once again the structural difference of the voting systems can easily be seen between these two graphs. Besides Wikipedia used to get some jumps because each election results are collected  daily. Globally Wikipedia average popularity is lower than the one for Epinions. This also could result from the voting systems: Wikipedia voters will not try to valorized someone else by interest, they should vote rationally to makes the Wikipedia network the most responsible for everyone. Epinions  knew an hype at the beginning then user popularities progressively decrease. 
+
+Notice that for the first 5 months, Epinions got a stable and high positive popularity average and Wikipedia knew chaotique schema until the 01/2005 where popularity becomes more stable around 80%. This periods could correspond to the beginning of the voting systems where people are not so famous, meaning with low number of votes for them. 
 
 TODO
 ![Fame and popularity evolution over time for Epinions](animation_Epinions_fame_pop.gif)
