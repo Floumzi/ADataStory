@@ -80,8 +80,12 @@ We are now ready to proceed and apply what we learnt previously. Our new framewo
 Several models was tested depending on which point of views we are interesting. Are popularity and fame sufficient for prediction ? Are activity and hate score sufficient for prediction ?  Or maybe a combination of all features could fit well our task. To perform the classification we choose two different models: Gradient Boosting classifier compare to a Logistic regression. As usual the GBC performs better the Logistic Regression. Therefore we decided to show you the GBC results only using Bootstrap Confidence interval and we empirical retrieve important features:
 
 Model 1: Fame/Popularity point of view
-* Wikipedia: an accuracy of 78,8%, the important features: Popularity of receiver
-* Epinions: an accuracy of 87,8%, the important features: Popularity of receiver
+
+| Dataset      | Accuracy | Important Features    |
+| :------------- | :----------: | -----------: |
+| Wikipedia | 78,8% |    Popularity of receiver |
+| Epinions | 87,8% | Popularity of receiver |
+
 
 Model 2: Activity/Hater-score point of view
 * Wikipedia: an accuracy of 80,3%, the important features: Hate-score of voter, Activity of receiver
