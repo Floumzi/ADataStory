@@ -10,7 +10,11 @@ More specifically, for both of theses social networks, links are explicitly posi
 
 We propose to study the popularity of the users in social media and their like/dislike behaviour. For this purpose, we set two main axes, first we focus on the received votes, then we look at the voters behavior. At the end, we will have a look at both sides together, and try to understand what influences the sign of a link.
 
-The github repo of our project is available [here](https://github.com/epfl-ada/ada-2020-project-milestone-p3-p3_adaptateur).
+The github repo of our project is available [here](https://github.com/epfl-ada/ada-2020-project-milestone-p3-p3_adaptateur). This work is an extension to the analysis from [Signed Networks in Social Media](https://dl.acm.org/doi/abs/10.1145/1753326.1753532) [1].
+
+
+[1] Leskovec, J., Huttenlocher, D., & Kleinberg, J. (2010, April). Signed networks in social media. In *Proceedings of the SIGCHI conference on human factors in computing systems* (pp. 1361-1370).
+
 
 -----------------
 
@@ -89,10 +93,12 @@ For Wikipedia, note that we have mostly lines, which could seem strange. This is
 
 ## Haters & lovers: How users interact with each others?
 
+After focusing on the destination of the links, let's now look at the other side! We will focus on the sources.
+
 Once again, some useful definitions: 
 
 * **activity**: the total number of reviews a user performed. 
-* **hater/lover**: the ratio of positive outer links a user send over the total outer edges.Similarly to popularity a ratio close to 1 means the user is more of a "hater" and a ratio close to 0 indicates a "lover". 
+* **hater/lover**: the ratio of positive outer links a user sent over the total outer edges. Similarly to popularity, a ratio close to 1 means the user is more of a "hater" and a ratio close to 0 indicates a "lover". 
 
 ------------
 
@@ -107,9 +113,16 @@ First, let's take a look at the distribution for the activity and the hater/love
 Here, we observe that the three websites seems to follow more or less a power law distribution for users activities. 
 Since there is no differences, we can assume that the behavior does not depend on the website's purpose.
 
+We see also that the hater ratio is mostly low, i.e. people tend to give more positive reviews/votes than bad ones. This is to be expected, given that we already saw Signed Networks in Social Media [1] that the networks had about 80% of positive edges. It is also nice to see that not too many people enjoy downvoting/giving bad reviews massively to others.
+
+Once again, let's have a look at the evolution over time for Wikipedia and Epinions.
 
 ![Distribution of activity and hate ratio for wikipedia over time](animation_Wikipedia_activiy_hate.gif)
 ![Distribution of activity and hate ratio for Epinions over time](animation_Epinions_activiy_hate.gif)
+
+Unlike on the evolution of fame and popularity, we see here that Wikipedia gets its final shape quickly. The hate ratio is low from the beggining, and the activity follows a power law right away. 
+
+Epinions is once again very stable, and its shape stays the same.
 
 ------------
 
