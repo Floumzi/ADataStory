@@ -62,7 +62,7 @@ Once again the structural difference of the voting systems can easily be seen be
 
 Notice that for the first 5 months, Epinions got a stable and high positive popularity average and Wikipedia knew chaotique schema until the 01/2005 where popularity becomes more stable around 80%. This periods could correspond to the beginning of the voting systems where people are not so famous, meaning with low number of votes for them. 
 
-TODO
+
 ![Fame and popularity evolution over time for Epinions](animation_Epinions_fame_pop.gif)
 ![Fame and popularity evolution over time for Epinions](animation_Epinions_fame_pop.gif)
 
